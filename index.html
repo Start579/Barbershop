@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Barbershop</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./image/logo.jpg">Logo</a>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="#masters">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
+    <header class="header">
+      <nav class="header-nav">
+        <a class="header-logo" href="./image/logo.jpg">Logo</a>
+        <ul class="header-list">
+          <li class="header-item"><a href="">О нас</a></li>
+          <li class="header-item"><a href="">Услуги и цены</a></li>
+          <li class="header-item"><a href="#masters">Мастера</a></li>
+          <li class="header-item"><a href="">Контакты</a></li>
         </ul>
         <a href="tel:+380441111111">+38 044 111 11 11</a>
         <button type="button">онлайн-запись</button>
@@ -24,21 +27,21 @@
     </header>
     <main>
       <!-- ==========HERO=========== -->
-      <section id="masters">
-        <ul>
-          <li>
+      <section class="hero section" id="masters">
+        <ul class="hero-list">
+          <li class="hero-item">
             <a
               href="http://www.instagram.com
-            "
+            " class="hero-link"
               target="_blank"
               rel="noopener nofollow noreferrer"
               >Instagram</a
             >
           </li>
-          <li>
+          <li class="hero-item">
             <a
               href="http://www.Youtube.com
-            "
+            " class="hero-link"
               target="_blank"
               rel="noopener nofollow noreferrer"
               >Youtube</a
@@ -46,17 +49,18 @@
           </li>
         </ul>
         <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">barbershop</h1>
+        <h1 lang="en">BarberShop</h1>
         <p>
           Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
           вкусом.
         </p>
       </section>
-      <section>
-                <ul>
-          <li><img src="./image/img1.jpg" alt="Мастер бреет клиента" width="270" height="445"/>
+           <!-- ==========ABOUT=========== -->
+      <section class="about section">
+                <ul class="about-list">
+          <li class="about-item"><img src="./image/img1.jpg" alt="Мастер бреет клиента" width="270" height="445"/>
         </li>
-        <li>
+        <li class="about-item">
           <img
             src="./image/img2.jpg"
             alt="Мастер стрижет клиента"
@@ -64,23 +68,24 @@
             height="445"
           /></li>
         </ul>
-                <p>О нас</p>
-        <h2>Лучший Барбершоп твоего города</h2>
-        <p>
+                <p class="about-top-text">О нас</p>
+        <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+        <p class="about-botton-text">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
         </p>
-        <p>
+        <p class="about-text">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет
           перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
           сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
           приходит!
         </p>
-        <button type="button">онлайн-запись</button>
+        <button type="button" class="about-btn">онлайн-запись</button>
       </section>
-      <section>
-        <p>Проведи время в компании лучших мастеров</p>
+           <!-- ==========PRICES=========== -->
+      <section class="prices section">
+        <p class="prices-text">Проведи время в компании лучших мастеров</p>
         <h2>Услуги и цены</h2>
         <ul>
           <li>
@@ -120,7 +125,8 @@
         </ul>
         <button type="button">онлайн-запись</button>
       </section>
-      <section>
+           <!-- ==========BENEFITS=========== -->
+      <section class="benefits section">
         <ul>
           <li>
             <span>600</span>
@@ -146,7 +152,8 @@
           чем 10 раз прочитать.
         </p>
       </section>
-      <section>
+           <!-- ==========MASTERS=========== -->
+      <section class="masters section">
         <p>для настоящих ценителей атмосферы</p>
         <h2>Наши мастера</h2>
         <ul>
@@ -182,7 +189,8 @@
           </li>
         </ul>
       </section>
-      <section>
+           <!-- ==========FOOTER=========== -->
+      <section class="footer section">
         <p>На латинском языке “барба” означает “борода”</p>
         <h2 hidden>Галерея</h2>
         <ul>

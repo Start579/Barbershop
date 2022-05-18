@@ -1,0 +1,58 @@
+:root {
+    --accent-color: #2196f3;
+    --accent-secondary-color: #212121;
+    --accent-bacground-color: #2f303a;
+    --second-bacground-color: #f5f4fa;
+    --accent-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --accent-font-weight: 700;
+    --second-font-weight: 500;
+    --accent-font-color: #757575;
+    --second-font-color: #ffffff;
+    --accent-color-white: white;
+    --accent-font-size: 14px;
+    --secondary-font-size: 16px;
+    --accent-line-height: 1.14;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  /* ======/STYLES-RESET/====== */
+  ul,
+  ol,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+  :link {
+      text-decoration: none;  
+  }
+/*============HEADER=============*/
+.section {
+    color: #2196f3;
+}
+
+
+
+
+
+
+
+/*=============HERO==============*/
+/*============*******============*/
+/*============*******============*/
+/*============*******============*/
+/*============FOOTER=============*/
