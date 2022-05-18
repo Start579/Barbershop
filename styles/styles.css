@@ -22,6 +22,36 @@
   *::after {
     box-sizing: inherit;
   }
+  .top-text {
+  font-weight: 600;
+  font-style: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+  }
+  .title {
+  font-family: ralewey;
+  font-weight: 700;
+  font-style: 42px;
+  letter-spacing: 0.05em;
+  color: #303030;
+  }
+  .btn {
+
+  }
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
   /* ======/STYLES-RESET/====== */
   ul,
   ol,
@@ -52,7 +82,153 @@
 
 
 /*=============HERO==============*/
-/*============*******============*/
-/*============*******============*/
-/*============*******============*/
+.hero {
+
+}
+.hero-list {
+
+}
+
+/*============ABOUT============*/
+.about-top-text {
+  font-weight: 600;
+  font-style: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+.about-tittle {
+  font-family: ralewey;
+  font-weight: 700;
+  font-style: 42px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.about-bottom-text {
+
+}
+.about-text {
+
+}
+
+.about-btn {
+  font-family: inherit;
+}
+/*============PRICES=============*/
+.prices {
+
+}
+.prices-top-text {
+
+}
+.prices-title {
+
+}
+.prices-item-text {
+
+}
+.prices-btn {
+
+}
+/*============BENEFITS===========*/
+.benefits {
+
+}
+.benefits-list {
+
+}
+.benefits-item {
+
+}
+.benefits-item-count {
+
+}
+.benefits-item-text {
+
+}
+.benefits-top-text {
+
+}
+.benefits-title {
+
+}
+.benefits-bottom-text {
+
+}
+/*============MASTER=============*/
+.master-top-text {
+
+}
+.master-title {
+
+}
+.master-item-title {
+
+}
+.master-item-text {
+
+}
+.master-item {
+
+}
+/*============ONLINE=============*/
+.online {
+
+}
+
+.online-title {
+
+}
+
+.contacts-title {
+
+}
+.contacts-adress {
+font-style: normal;
+}
+
+.contacts-list {
+
+}
+
+.contacts-item {
+
+}
+
+.contacts-link {
+
+}
+.contacts-subtitle {
+
+}
+
+.contacts-time {
+font-style: 18px;
+line-height: 1.67;
+
+}
+
 /*============FOOTER=============*/
+.footer {
+
+}
+
+.footer-copy {
+
+}
+
+.footer-list {
+
+}
+
+.footer-item {
+
+}
+
+.footer-link {
+
+}
+.footer-link:hover {
+
+}
