@@ -1,17 +1,22 @@
-:root {
-    --accent-color: #2196f3;
-    --accent-secondary-color: #212121;
-    --accent-bacground-color: #2f303a;
-    --second-bacground-color: #f5f4fa;
-    --accent-font: "Roboto", sans-serif;
+
+/* /* :root {
+    --accent-bacground-color: #E5E5E5;
+    --second-bacground-color: #F7F7F7;
+    --third-bacground-color: #191C26;
+    --accent-font: "Open+Sans", sans-serif;
     --secondary-font: "Raleway", sans-serif;
-    --accent-font-weight: 700;
-    --second-font-weight: 500;
-    --accent-font-color: #757575;
-    --second-font-color: #ffffff;
+    --accent-font-weight: 400;
+    --second-font-weight: 600;
+    --third-font-weight: 700;
+    --accent-font-color: #303030;
+    --second-font-color: #555555;
+    --third-font-color: #FF6C00;
+    --fourth-font-color: #9DA4BD;
     --accent-color-white: white;
-    --accent-font-size: 14px;
-    --secondary-font-size: 16px;
+    --accent-font-size: 11px;
+    --secondary-font-size: 14px;
+    --third-font-size: 18px;
+    --fourth-font-size: 42px;
     --accent-line-height: 1.14;
   }
   html {
@@ -39,7 +44,7 @@
   }
   .btn {
 
-  }
+  } 
   .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -52,32 +57,53 @@
     clip-path: inset(50%);
     margin: -1px;
   }
+  body {
+    font-family: var(--accent-font);
+  }
   /* ======/STYLES-RESET/====== */
-  ul,
+ ul,
   ol,
   li {
     padding: 0;
     margin: 0;
     list-style: none;
-  
   }
+  
   h1,
   h2,
   h3,
   p {
     margin: 0;
   }
+  .link {
+    text-decoration: none;  
+}
   :link {
       text-decoration: none;  
   }
+  .list {
+    text-decoration: none;
+  }
 /*============HEADER=============*/
 .section {
-    color: #2196f3;
+    color:
+} 
+.header-list {
+
 }
+.header-link {
 
+}
+.header-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: var(--accent-color-white);
+} 
 
-
-
+ 
 
 
 
