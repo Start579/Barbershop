@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+        <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Barbershop</title>
   </head>
   <body>
+       <!-- =========HEADER========= -->
     <header class="header">
+      <div class="container">
       <nav class="header-nav">
         <a class="" href><img src="./image/logo.jpg" alt="лого сайта" /></a>
         <!-- <a class="header-logo" href=""><img src="./image/logo.jpg" alt="лого" /></a> -->
@@ -19,21 +31,24 @@
           <li><a class="header-item link" href="">О нас</a></li>
           <li><a class="header-item link" href="">Услуги и цены</a></li>
           <li><a class="header-item link" href="#masters">Мастера</a></li>
-          <li><a class="header-item link" href="">Контакты</a></li>
+          <li><a class="header-item-last link" href="">Контакты</a></li>
         </ul>
         <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">онлайн-запись</button>
+        <button class="header-btn" type="button">онлайн-запись</button>
         <!-- <a href="">онлайн-запись</a> -->
       </nav>
+    </div>
     </header>
     <main>
       <!-- ==========HERO=========== -->
       <section class="hero section" id="masters">
+        <div class="container">
         <ul class="hero-list">
           <li class="hero-item">
             <a
               href="http://www.instagram.com
-            " class="hero-link"
+            "
+              class="hero-link"
               target="_blank"
               rel="noopener nofollow noreferrer"
               >Instagram</a
@@ -42,34 +57,46 @@
           <li class="hero-item">
             <a
               href="http://www.Youtube.com
-            " class="hero-link"
+            "
+              class="hero-link"
               target="_blank"
               rel="noopener nofollow noreferrer"
               >Youtube</a
             >
           </li>
         </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">BarberShop</h1>
+        <div class="hero-content">
+        <p class="hero-top-text" lang="en">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title"lang="en">BarberShop</h1>
         <p>
           Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
           вкусом.
         </p>
+      </div>
+      </div>
       </section>
-           <!-- ==========ABOUT=========== -->
+      <!-- ==========ABOUT=========== -->
       <section class="about section">
-                <ul class="about-list">
-          <li class="about-item"><img src="./image/img1.jpg" alt="Мастер бреет клиента" width="270" height="445"/>
-        </li>
-        <li class="about-item">
-          <img
-            src="./image/img2.jpg"
-            alt="Мастер стрижет клиента"
-            width="270"
-            height="445"
-          /></li>
+        <div class="container">
+        <ul class="about-list">
+          <li class="about-item">
+            <img
+              src="./image/img1.jpg"
+              alt="Мастер бреет клиента"
+              width="270"
+              height="445"
+            />
+          </li>
+          <li class="about-item">
+            <img
+              src="./image/img2.jpg"
+              alt="Мастер стрижет клиента"
+              width="270"
+              height="445"
+            />
+          </li>
         </ul>
-                <p class="about-top-text">О нас</p>
+        <p class="about-top-text">О нас</p>
         <h2 class="about-title">Лучший Барбершоп твоего города</h2>
         <p class="about-botton-text">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
@@ -83,12 +110,15 @@
           приходит!
         </p>
         <button type="button" class="about-btn">онлайн-запись</button>
+      </div>
       </section>
-           <!-- ==========PRICES=========== -->
+      <!-- ==========PRICES=========== -->
       <section class="prices section">
+        <div class="container">
         <p class="prices-text">Проведи время в компании лучших мастеров</p>
         <h2 class="prices-title">Услуги и цены</h2>
-        <ul class="prisesilist">
+        <div class="prices-block">
+        <ul class="prises-list">
           <li class="prices-item">
             <p class="prices-item-text">Мужская стрижка</p>
             <p class="prices-item-text">от 300 грн.</p>
@@ -106,7 +136,7 @@
             <p class="prices-item-text">от 200 грн.</p>
           </li>
         </ul>
-        <ul>
+        <ul class="prises-list">
           <li class="prices-item">
             <p class="prices-item-text">Cтрижка у стажера</p>
             <p class="prices-item-text">от 500 грн.</p>
@@ -124,10 +154,13 @@
             <p class="prices-item-text">от 200 грн.</p>
           </li>
         </ul>
-        <button type="button">онлайн-запись</button>
+      </div>
+        <button class="prices-btn" type="button">онлайн-запись</button>
+      </div>
       </section>
-           <!-- ==========BENEFITS=========== -->
+      <!-- ==========BENEFITS=========== -->
       <section class="benefits section">
+        <div class="container">
         <ul class="benefits-list">
           <li class="benefits-item">
             <span class="benefits-item-count">600</span>
@@ -152,10 +185,14 @@
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
         </p>
+      </div>
       </section>
-           <!-- ==========MASTERS=========== -->
+      <!-- ==========MASTERS=========== -->
       <section class="masters section">
-        <p class="master-top-text top-text">для настоящих ценителей атмосферы</p>
+        <div class="container">
+        <p class="master-top-text top-text">
+          для настоящих ценителей атмосферы
+        </p>
         <h2 class="master-title title">Наши мастера</h2>
         <ul class="master-list list">
           <li class="master-item">
@@ -165,8 +202,10 @@
               width="370"
               height="346"
             />
+            <div class="master-block">
             <h3 lang="en" class="master-item-title">John Smith</h3>
             <p lang="en" class="master-item-text">Extreme barber</p>
+          </div>
           </li>
           <li class="master-item">
             <img
@@ -175,8 +214,10 @@
               width="370"
               height="346"
             />
+            <div class="master-block">
             <h3 lang="en" class="master-item-title">Michele Doe</h3>
             <p lang="en" class="master-item-text">Extreme barber</p>
+          </div>
           </li>
           <li class="master-item">
             <img
@@ -185,75 +226,92 @@
               width="370"
               height="346"
             />
+            <div class="master-block">
             <h3 lang="en" class="master-item-title">Alan Black</h3>
             <p lang="en" class="master-item-text">Extreme barber</p>
+          </div>
           </li>
         </ul>
+        </div>
       </section>
-           <!-- ==========FOOTER=========== -->
+      <!-- ==========FOOTER=========== -->
       <section class="footer section">
-        <p class="gallery-top-text top-text">На латинском языке “барба” означает “борода”</p>
+        <div class="container">
+        <p class="gallery-top-text top-text">
+          На латинском языке “барба” означает “борода”
+        </p>
         <h2 hidden>Галерея</h2>
         <ul class="gallery-list list">
           <li class="gallery-item">
-          <img
-            src="./image/Rectangle7.jpg"
-            alt="Барбер"
-            width="270"
-            height="360"
-          />
-        </li>
-        <li class="gallery-item">
-                  <img
-            src="./image/Rectangle8.jpg"
-            alt="Барбер"
-            width="270"
-            height="360"
-          />
-        </li>
-        <li class="gallery-item">
-          <img
-            src="./image/Rectangle9.jpg"
-            alt="Барбер"
-            width="270"
-            height="360"
-          />
-        </li>
-        <li class="gallery-item">
-          <img
-            src="./image/Rectangle10.jpg"
-            alt="Барбер"
-            width="270"
-            height="360"
-          /></li>
+            <img
+              src="./image/Rectangle7.jpg"
+              alt="Барбер"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li class="gallery-item">
+            <img
+              src="./image/Rectangle8.jpg"
+              alt="Барбер"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li class="gallery-item">
+            <img
+              src="./image/Rectangle9.jpg"
+              alt="Барбер"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li class="gallery-item">
+            <img
+              src="./image/Rectangle10.jpg"
+              alt="Барбер"
+              width="270"
+              height="360"
+            />
+          </li>
         </ul>
+        </div>
       </section>
       <section class="online">
+        <div class="container">
         <h2 class="online-title title">Онлайн-запись</h2>
+        </div>
       </section>
       <section class="contacts">
+        <div class="container">
         <h2 class="contacts-title title">Модальное окно наверное</h2>
         <address class="contacts-adress">
-          <h2 class="contacts-title">
-Контакты
-          </h2>
+          <h2 class="contacts-title">Контакты</h2>
           <ul class="contacts-list">
             <li class="contacts-item">
               <a
                 href="https://goo.gl/maps/eGTPg34VVhCZkw5MA"
-                target="_blank"  class="contacts-link"
+                target="_blank"
+                class="contacts-link"
                 rel="noopener nofollow noreferrer"
                 >ул. Васильковая, 7А Киев, 08132</a
               >
             </li>
-            <li><a href="tel:+380441111111" class="contacts-link">+38 044 111 11 11</a></li>
             <li>
-              <a href="mailto:barbershop@email.com" class="contacts-link">barbershop@email.com</a>
+              <a href="tel:+380441111111" class="contacts-link"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:barbershop@email.com" class="contacts-link"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
         <p class="contacts-subtitle">Время работы</p>
         <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+      </div>
       </section>
     </main>
     <footer class="footer">
@@ -263,7 +321,8 @@
           <a
             href="http://www.instagram.com
           "
-            target="_blank"  class="footer-link"
+            target="_blank"
+            class="footer-link"
             rel="noopener nofollow noreferrer"
             >Instagram</a
           >
@@ -272,7 +331,8 @@
           <a
             href="http://www.Youtube.com
           "
-            target="_blank" class="footer-link"
+            target="_blank"
+            class="footer-link"
             rel="noopener nofollow noreferrer"
             >Youtube</a
           >
