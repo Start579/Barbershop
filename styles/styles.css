@@ -17,6 +17,7 @@
     --third-font-size: 18px;
     --fourth-font-size: 42px;
     --accent-line-height: 1.14;
+    --typical-margin: 20px;
   }
   html {
     box-sizing: border-box;
@@ -24,7 +25,11 @@
   *,
   *::before,
   *::after {
-    box-sizing: inherit;
+    /* box-sizing: inherit; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
   }
   .top-text {
   font-weight: 600;
@@ -41,10 +46,7 @@
   letter-spacing: 0.05em;
   color: #303030;
   }
-  .btn {
-
-  } 
-  .visually-hidden {
+    .visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -63,14 +65,26 @@
  ul,
   ol,
   li {
-    padding: 0;
+    padding-left: 0;
     margin: 0;
     list-style: none;
   }
-  
+  button {
+    cursor: pointer;
+  }
+  .container {
+width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+outline: 1px solid #FF6C00;
+  }
+
   h1,
   h2,
   h3,
+  h4,
+  h5,
   p {
     margin: 0;
   }
@@ -83,32 +97,69 @@
   .list {
     text-decoration: none;
   }
+  img {
+    display: block;
+  }
+    
+  
 /*============HEADER=============*/
-.section {
-    color:
-} 
-.header-list {
-
+.header-item {
+margin-right: 40px;
 }
-.header-link {
-
+.header-item-last {
+  margin: 0;
+}
+.header-list {
+margin-left: 40px;
 }
 .header-item {
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--accent-color-white);
 } 
-
- 
+.header {
+  background-color: #9DA4BD;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-btn {
+  margin-left: 40px;
+} 
 
 
 
 /*=============HERO==============*/
-.hero {
-
+.hero-content {
+padding: 272px 96px 206px 96px;
+background-color: #cfd2db;
+}
+.hero-top-text {
+  margin-bottom: var(--typical-margin);
+}
+.hero-title {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 1.18;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+margin-bottom: var(--typical-margin);
+}
+.hero-top-text {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: rgba(157, 164, 189, 0.6);
+/* margin-left: 96px;
+margin-top: 272px; */
 }
 .hero-list {
 
@@ -118,7 +169,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
 }
@@ -130,6 +181,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .about-tittle {
   font-family: ralewey;
@@ -137,24 +189,27 @@
   font-style: 42px;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .about-bottom-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 2;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: var(--typical-margin);
 }
 .about-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.85;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 
 .about-btn {
@@ -162,10 +217,11 @@
 font-style: normal;
 font-weight: 600;
 font-size: 12px;
-line-height: 16px;
+line-height: 1.33;
 letter-spacing: 0.09em;
 text-transform: uppercase;
 color: #303030;
+margin-bottom: 125px;
 }
 /*============PRICES=============*/
 .prices {
@@ -176,65 +232,89 @@ color: #303030;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-left: 55px;
+  margin-top: 130px;
+  margin-bottom: var(--typical-margin);
 }
 .prices-title {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #FFFFFF;
+  margin-bottom: 44px;
 }
 .prices-item-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
  color: #9DA4BD;
+ margin-bottom: var(--typical-margin);
 }
 .prices-btn {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0 auto;
+ display: block;
+ margin-top: 50px; 
+}
+.prises-list {
+display: block;
+outline: 1px solid #FF6C00;
+padding-right: 585px;
+}
+.prices-block {
+  margin-left: 55px;
+  display: flex;
+ 
 }
 /*============BENEFITS===========*/
 .benefits {
-
+padding-top: 143px;
+padding-bottom: 137px;
 }
 .benefits-list {
 
 }
 .benefits-item {
-
+width: 170px;
+height: 133px;
+border: 1ps solid #555555;
+padding: 20px 24px;
 }
 .benefits-item-count {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 57px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  display: block;
+padding-bottom: 6px;
 }
 .benefits-item-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   text-align: center;
   color: #303030;
 }
@@ -243,65 +323,77 @@ color: #303030;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .benefits-title {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .benefits-bottom-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
 }
 /*============MASTER=============*/
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .master-top-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
+  margin-bottom: var(--typical-margin);
 }
 .master-title {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
+}
+.master-block {
+  display: block;
 }
 .master-item-title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
 .master-item-text {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
   color: #FF6C00;
@@ -315,10 +407,11 @@ color: #303030;
 font-style: normal;
 font-weight: 600;
 font-size: 11px;
-line-height: 15px;
+line-height: 1.36;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: #303030;
+margin-bottom: 44px;
 }
 .top-text {
 }
@@ -334,7 +427,7 @@ color: #303030;
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #FFFFFF;
   }
@@ -348,7 +441,7 @@ color: #303030;
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
@@ -369,7 +462,7 @@ font-style: normal;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9DA4BD;
 }
@@ -378,7 +471,7 @@ font-style: normal;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -389,7 +482,7 @@ font-style: normal;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9DA4BD;
 }
@@ -404,7 +497,7 @@ font-style: normal;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
   }
 
@@ -421,7 +514,7 @@ font-style: normal;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
   
