@@ -110,6 +110,14 @@ margin-right: 40px;
 }
 .header-list {
 margin-left: 40px;
+display: flex;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 80px;
 }
 .header-item {
   font-style: normal;
@@ -126,6 +134,11 @@ margin-left: 40px;
 }
 .header-btn {
   margin-left: 40px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid var(--third-font-color);
+  background-color: transparent;
+  border-radius: 25px;
 } 
 .header-tel {
   font-family: var(--accent-font);
@@ -137,6 +150,12 @@ margin-left: 40px;
   color: var(--accent-color-white);
 }
 /*=============HERO==============*/
+.hero-item:not(:last-child) {
+margin-right: 40px;
+}
+.hero .container {
+  display: flex;
+}
 .hero-content {
 padding: 272px 96px 206px 96px;
 background-color: #303030;
@@ -183,14 +202,24 @@ max-width: 400px;
   letter-spacing: 0.2em;
   color: var(--accent-font-color);
 }
+.hero-list {
+  width: 90px;
+}
 /*============ABOUT============*/
 .about {
   padding-top: 170px;
   padding-bottom: 120px;
 }
+.about-item + .about-item {
+  margin-left: 30px;
+}
 .about-list {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  margin-right: 64px;
+  }
+  .about .container {
+    display: flex;
   }
 .about-top-text {
   font-weight: var(--second-font-weight);
@@ -245,6 +274,16 @@ margin-bottom: 125px;
 background-color: var(--accent-font-color);
 padding-bottom: 130px;
 padding-top: 130px;
+}
+.prices-wrap {
+  display: flex;
+}
+.prices-item {
+  display: flex;
+justify-content: space-between;
+}
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 .prices-text {
   font-family: var(--accent-font);
@@ -308,6 +347,7 @@ padding-top: 130px;
 display: block;
 outline: 1px solid #FF6C00;
 padding: 30px 40px;
+flex-grow: 1;
 }
 .prices-block {
   margin-left: 55px;
@@ -381,6 +421,16 @@ padding-bottom: 6px;
   padding-top: 130px;
   padding-bottom: 130px;
 }
+.master-list {
+  display: flex;
+  
+}
+.master-item:not(:last-child) {
+  margin-right: 30px;
+}
+.master-item {
+  width: calc((100% - 60px) / 3);
+}
 .master-top-text {
   font-family: var(--accent-font);
   font-style: normal;
@@ -438,6 +488,19 @@ letter-spacing: 0.1em;
 text-transform: uppercase;
 color: var(--accent-font-color);
 margin-bottom: 44px;
+}
+.gallery-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 /*========ONLINE+CONTACT=========*/
   .online-title {
