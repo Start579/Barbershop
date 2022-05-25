@@ -25,7 +25,7 @@
     <header class="header">
       <div class="container">
       <nav class="header-nav">
-        <a class="" href><img src="./image/logo.jpg" alt="лого сайта" /></a>
+        <a href="img"><img src="./image/logo.jpg" alt="лого сайта" /></a>
         <!-- <a class="header-logo" href=""><img src="./image/logo.jpg" alt="лого" /></a> -->
         <ul class="header-list list">
           <li><a class="header-item link" href="">О нас</a></li>
@@ -33,8 +33,10 @@
           <li><a class="header-item link" href="#masters">Мастера</a></li>
           <li><a class="header-item-last link" href="">Контакты</a></li>
         </ul>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-btn" type="button">онлайн-запись</button>
+        <a href="tel:+380441111111" class="header-tel link"
+                >+38 044 111 11 11</a
+              >
+        <button class="header-btn btn" type="button">онлайн-запись</button>
         <!-- <a href="">онлайн-запись</a> -->
       </nav>
     </div>
@@ -67,8 +69,8 @@
         </ul>
         <div class="hero-content">
         <p class="hero-top-text" lang="en">A hair salon for men in Kyiv</p>
-        <h1 class="hero-title"lang="en">BarberShop</h1>
-        <p>
+        <h1 class="hero-title" lang="en">BarberShop</h1>
+        <p class="hero-bottom-text">
           Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
           вкусом.
         </p>
@@ -98,7 +100,7 @@
         </ul>
         <p class="about-top-text">О нас</p>
         <h2 class="about-title">Лучший Барбершоп твоего города</h2>
-        <p class="about-botton-text">
+        <p class="about-bottom-text">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
         </p>
@@ -115,7 +117,7 @@
       <!-- ==========PRICES=========== -->
       <section class="prices section">
         <div class="container">
-        <p class="prices-text">Проведи время в компании лучших мастеров</p>
+        <p class="prices-text top-text">Проведи время в компании лучших мастеров</p>
         <h2 class="prices-title">Услуги и цены</h2>
         <div class="prices-block">
         <ul class="prises-list">
@@ -278,15 +280,16 @@
         </div>
       </section>
       <section class="online">
-        <div class="container">
-        <h2 class="online-title title">Онлайн-запись</h2>
-        </div>
-      </section>
+   <div class="container">
+                      <h2 class="online-title title">Онлайн-запись</h2>
+                                       </div>   
+                </section>
       <section class="contacts">
         <div class="container">
-        <h2 class="contacts-title title">Модальное окно наверное</h2>
+              <div class="contacts-footer">
+      
         <address class="contacts-adress">
-          <h2 class="contacts-title">Контакты</h2>
+          <p class="contacts-title">Контакты</p>
           <ul class="contacts-list">
             <li class="contacts-item">
               <a
@@ -311,11 +314,13 @@
         </address>
         <p class="contacts-subtitle">Время работы</p>
         <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
-      </div>
+         </div>
+          </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer-copy"></p>
+      <div class="container">
+      <p class="footer-copy">Copyright 2020</p>
       <ul class="footer-list">
         <li class="footer-item">
           <a
@@ -338,6 +343,7 @@
           >
         </li>
       </ul>
+    </div>
     </footer>
   </body>
 </html>
