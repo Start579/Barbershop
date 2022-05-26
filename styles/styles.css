@@ -67,6 +67,12 @@
   }
   button {
     cursor: pointer;
+    margin-left: 40px;
+  min-width: 160px;
+  height: 40px;
+  border: 1px solid var(--third-font-color);
+  background-color: transparent;
+  border-radius: 25px;
   }
   .container {
 width: 1200px;
@@ -111,13 +117,21 @@ margin-right: 40px;
 .header-list {
 margin-left: 40px;
 display: flex;
+align-items: center;
 }
-.header-container {
+/* .header-container {
+  display: flex;
+  align-items: center;
+} */
+.header-nav {
   display: flex;
   align-items: center;
 }
 .header-logo {
-  margin-right: 80px;
+  margin-right: 70px;
+}
+.header-contacts {
+  margin-left: auto;
 }
 .header-item {
   font-style: normal;
@@ -133,12 +147,12 @@ display: flex;
   padding-bottom: 32px;
 }
 .header-btn {
-  margin-left: 40px;
+  /* margin-left: 40px;
   min-width: 160px;
   height: 40px;
   border: 1px solid var(--third-font-color);
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 25px; */
 } 
 .header-tel {
   font-family: var(--accent-font);
@@ -377,6 +391,17 @@ padding: 20px 24px;
   display: block;
 padding-bottom: 6px;
 }
+.benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+}
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
 .benefits-item-text {
   font-family: var(--accent-font);
   font-style: normal;
@@ -490,19 +515,23 @@ color: var(--accent-font-color);
 margin-bottom: 44px;
 }
 .gallery-item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  /* flex-basis: calc(100% / 4 - 30px); */
+  flex-basis: calc(100% / 4);
+  /* margin-left: 30px; */
   margin-bottom: 30px;
 }
 .gallery-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .gallery {
   padding-top: 130px;
   padding-bottom: 130px;
 }
 /*========ONLINE+CONTACT=========*/
+.online {
+  display: flex;
+}
   .online-title {
      font-family: var(--secondary-font);
   font-style: normal;
