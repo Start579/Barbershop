@@ -34,7 +34,19 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent-font-color);
+  display: flex;
+  align-items: center;
+  } 
+  .top-text::before {
+    content: "";
+width: 60px;
+height: 1px;
+background-color: rgba(157, 164, 189, 0.6);
+margin-right: 21px;
   }
+
+
+
   .title {
   font-family: var(--secondary-font);
   font-weight: var(--third-font-weight);
@@ -206,7 +218,9 @@ letter-spacing: 0.05em;
 color: var(--accent-color-white);
 margin-bottom: var(--typical-margin);
 }
+.hero-title::before {
 
+}
 .hero-bottom-text {
 font-family: var(--accent-font);
 font-style: normal;
@@ -311,7 +325,17 @@ margin: 0 auto;
 .prices-item {
   display: flex;
 justify-content: space-between;
+  align-items: baseline;
+  margin-left: 6px;
+  margin-right: 6px;
+  }
+.prices-item::before {
+content: "";
+flex-grow: 1;
+height: 1px;
+background-color: rgba(157, 164, 189, 0.6);
 }
+
 .prices-item:last-child {
   margin-bottom: 0;
 }
@@ -360,6 +384,10 @@ justify-content: space-between;
  color: #9DA4BD;
  /* margin-bottom: var(--typical-margin); */
 }
+.prices-item-text:first-child {
+  order: -1;
+}
+
 .prices-btn {
   font-family: var(--accent-font);
   font-style: normal;
@@ -382,8 +410,13 @@ flex-grow: 1;
 .prices-block {
   margin-left: 55px;
   display: flex;
- 
-}
+ }
+ .prices-list-light {
+   linear-gradient: (180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+ }
+ .prices-list-dark {
+  linear-gradient: (180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+ }
 /*============BENEFITS===========*/
 .benefits {
 padding-top: 143px;
@@ -406,6 +439,16 @@ padding: 20px 24px;
   color: var(--accent-font-color);
   display: block;
 padding-bottom: 6px;
+}
+.benefits-item-count::after {
+  content: "+";
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #FF6C00;
 }
 .benefits-list {
   display: flex;
@@ -655,4 +698,21 @@ font-style: normal;
 }
 .footer-link:hover {
   color: #FF6C00;
+}
+
+.btn::before {
+  content: "";
+width: 40px;
+height: 40px;
+background-color: #FF6C00;
+border-radius: 50px;
+}
+.btn::after {
+  content: "";
+  background-image: url(..//image/logo.jpg);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
