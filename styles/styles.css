@@ -306,10 +306,11 @@ letter-spacing: 0.09em;
 text-transform: uppercase;
 color: var(--accent-font-color);
 margin-bottom: 125px;
+margin-top: 40px;
 }
 /*============PRICES=============*/
 .prices {
-/* background-color: var(--accent-font-color); */
+background-color: #111319;
 background-image: url(../image/prices-bg.png);
 background-repeat: no-repeat;
 /* background-position: center; */
@@ -333,9 +334,13 @@ justify-content: space-between;
 content: "";
 flex-grow: 1;
 height: 1px;
-background-color: rgba(157, 164, 189, 0.6);
+background-color: rgba(157, 164, 189, 0.12prices-btn);
+margin-left: 6px;
+margin-right: 6px;
 }
-
+.prices-item:first-child {
+  order: -1;
+} 
 .prices-item:last-child {
   margin-bottom: 0;
 }
@@ -402,8 +407,6 @@ background-color: rgba(157, 164, 189, 0.6);
  margin-top: 50px; 
 }
 .prices-list {
-/* display: block; */
-outline: 1px solid #FF6C00;
 padding: 30px 40px;
 flex-grow: 1;
 }
@@ -412,20 +415,21 @@ flex-grow: 1;
   display: flex;
  }
  .prices-list-light {
-   linear-gradient: (180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
  }
  .prices-list-dark {
-  linear-gradient: (180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
  }
 /*============BENEFITS===========*/
 .benefits {
 padding-top: 143px;
 padding-bottom: 137px;
 }
+
 .benefits-item {
 width: 170px;
 height: 133px;
-border: 1px solid #555555;
+background-color: #F7F7F7;
 padding: 20px 24px;
 }
 .benefits-item-count {
@@ -442,13 +446,12 @@ padding-bottom: 6px;
 }
 .benefits-item-count::after {
   content: "+";
-  font-family: 'Open Sans';
-font-style: normal;
 font-weight: 600;
 font-size: 16px;
-line-height: 22px;
+line-height: 1.38;
 text-align: center;
-color: #FF6C00;
+color: var(--third-font-color);
+vertical-align: top;
 }
 .benefits-list {
   display: flex;
@@ -594,125 +597,117 @@ justify-content: center;
       fill: #FF6C00;
   }
 /*============GALERY=============*/
-.gallery-top-text {
-  font-family: var(--accent-font);
-font-style: normal;
-font-weight: var(--second-font-weight);
-font-size: var(--accent-font-size);
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(--accent-font-color);
-margin-bottom: 44px;
-}
-.gallery-item {
-  /* flex-basis: calc(100% / 4 - 30px); */
-  flex-basis: calc(100% / 4);
-  /* margin-left: 30px; */
-  margin-bottom: 30px;
-}
-.gallery-list {
-  display: flex;
-  flex-wrap: nowrap;
-}
 .gallery {
   padding-top: 130px;
   padding-bottom: 130px;
 }
-/*========ONLINE+CONTACT=========*/
-.online {
+
+.gallery-top-text {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin: 15px;
+}
+
+.contact-wrap {
+  background-color: #191c26;
+  background-image: url(../image/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contact-wrap .container {
   display: flex;
 }
-  .online-title {
-     font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: var(--third-font-weight);
-  font-size: var(--fourth-font-size);
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: var(--accent-color-white);
-    background-color: #191C26;
+
+/*============ONLINE=============*/
+
+.online {
   padding-top: 130px;
-  padding-left: 58px; 
-  }
+  padding-bottom: 130px;
+  width: calc(50% + 15px);
+}
+.online-title {
+  color: var(--main-title-color);
+}
+
+/*============CONTACTS=============*/
+
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: calc(50% - 15px);
+  padding-left: 100px;
+}
+
 .contacts-title {
-  font-family: var(--secondary-font);
+  color: var(--main-title-color);
+  margin-bottom: 40px;
+}
+
+.contacts-address {
   font-style: normal;
-  font-weight: var(--third-font-weight);
-  font-size: var(--fourth-font-size);
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: var(--accent-color-white);
- 
+  margin-bottom: 70px;
 }
-.contacts-adress {
-font-style: normal;
+
+.contacts-item + .contacts-item {
+  margin-top: var(--typical-margin);
 }
+
 .contacts-link {
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: var(--accent-font-weight);
-  font-size: var(--third-font-size);
+  font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9DA4BD;
+  color: #9da4bd;
 }
+
 .contacts-subtitle {
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: var(--second-font-weight);
-  font-size: var(--accent-font-size);
+  font-weight: 600;
+  font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent-color-white);
+  color: #ffffff;
+  margin-bottom: var(--typical-margin);
 }
 
 .contacts-time {
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: var(--accent-font-weight);
-  font-size: var(--third-font-size);
+  font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9DA4BD;
+  color: #9da4bd;
 }
 /*============FOOTER=============*/
+
 .footer-copy {
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: var(--second-font-weight);
-  font-size: var(--accent-font-size);
+  font-weight: 600;
+  font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  }
-.footer-link {
-  font-family: var(--accent-font);
-  font-style: normal;
-  font-weight: var(--second-font-weight);
-  font-size: var(--accent-font-size);
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--accent-font-color);
-  
-}
-.footer-link:hover {
-  color: #FF6C00;
+  color: #9da4bd;
 }
 
-.btn::before {
-  content: "";
-width: 40px;
-height: 40px;
-background-color: #FF6C00;
-border-radius: 50px;
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
-.btn::after {
-  content: "";
-  background-image: url(..//image/logo.jpg);
-  width: 40px;
-  height: 40px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
